@@ -1,0 +1,39 @@
+{
+  "name": "pkgstore/mediawiki-ext-issue",
+  "type": "mediawiki-extension",
+  "description": "MediaWiki issues extension.",
+  "license": "MIT",
+  "homepage": "https://pkgstore.github.io/",
+  "keywords": [
+    "mediawiki",
+    "issue"
+  ],
+  "authors": [
+    {
+      "name": "Kitsune Solar",
+      "email": "kitsune.solar@gmail.com",
+      "homepage": "https://kitsune.solar/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/pkgstore/mediawiki-ext-issue/issues",
+    "source": "https://github.com/pkgstore/mediawiki-ext-issue"
+  },
+  "require": {
+    "composer/installers": "^1.9",
+    "pkgstore/mediawiki-ext-kernel": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "MW_EXT_Issue.class.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "prepend-autoloader": false
+  },
+  "extra": {
+    "installer-name": "MW_EXT_Issue"
+  }
+}
